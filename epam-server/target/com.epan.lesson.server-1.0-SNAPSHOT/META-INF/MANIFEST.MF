@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: rostykboiko
+Implementation-Vendor-Id: com.epan.lesson.server
+Created-By: IntelliJ IDEA
+Build-Jdk: 9.0.1
+Main-Class: ${start-class}
+
