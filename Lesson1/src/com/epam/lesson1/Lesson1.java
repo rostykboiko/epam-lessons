@@ -2,7 +2,7 @@ package com.epam.lesson1;
 
 import java.util.Scanner;
 
-public class LessonTask1 {
+public class Lesson1 {
     private int[] f = new int[25];
     private int[] array = new int[5];
     private Scanner scanner = new Scanner(System.in);
