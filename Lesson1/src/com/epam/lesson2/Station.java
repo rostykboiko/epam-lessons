@@ -5,14 +5,16 @@ import java.util.Date;
 public class Station {
     private String title;
     private Date timeComes;
-    private Date timeDepature;
+    private Date timeDeparture;
 
-    public Station(){}
+    public Station(String title) {
+        this.title = title;
+    }
 
-    public Station(String title, Date timeComes, Date timeDepature) {
+    Station(String title, Date timeComes, Date timeDeparture) {
         this.title = title;
         this.timeComes = timeComes;
-        this.timeDepature = timeDepature;
+        this.timeDeparture = timeDeparture;
     }
 
     public String getTitle() {
@@ -31,11 +33,11 @@ public class Station {
         this.timeComes = timeComes;
     }
 
-    public Date getTimeDepature() {
-        return timeDepature;
+    public Date getTimeDeparture() {
+        return timeDeparture;
     }
 
-    public void setTimeDepature(Date timeDepature) {
-        this.timeDepature = timeDepature;
+    public void setTimeDeparture(Date timeDeparture) {
+        this.timeDeparture = timeDeparture;
     }
 }

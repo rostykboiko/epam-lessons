@@ -4,22 +4,39 @@ import java.util.ArrayList;
 import java.util.Date;
 
 class Train {
-    private String trainNum;
+    private int trainNum;
+    private int availableSeats;
+    private int amountOfSeats;
     private ArrayList<Station> stationArrayList;
 
-    Train(){
-    }
-
-    Train(String trainNum, ArrayList stationArrayList) {
+    Train(int trainNum, int availableSeats, int amountOfSeats, ArrayList<Station> stationArrayList) {
         this.trainNum = trainNum;
+        this.availableSeats = availableSeats;
+        this.amountOfSeats = amountOfSeats;
         this.stationArrayList = stationArrayList;
     }
 
-    public String getTrainNum() {
+    public int getAvailableSeats() {
+        return availableSeats;
+    }
+
+    public void setAvailableSeats(int availableSeats) {
+        this.availableSeats = availableSeats;
+    }
+
+    public int getAmountOfSeats() {
+        return amountOfSeats;
+    }
+
+    public void setAmountOfSeats(int amountOfSeats) {
+        this.amountOfSeats = amountOfSeats;
+    }
+
+    public int getTrainNum() {
         return trainNum;
     }
 
-    public void setTrainNum(String trainNum) {
+    public void setTrainNum(int trainNum) {
         this.trainNum = trainNum;
     }
 
@@ -33,7 +50,7 @@ class Train {
 
     public Station getCurrentStation(Date time) {
         for (Station station : stationArrayList) {
-            if (station.getTimeComes().after(time) && station.getTimeDepature().before(time)) {
+            if (station.getTimeComes().after(time) && station.getTimeDeparture().before(time)) {
                 return station;
             }
         }
