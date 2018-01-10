@@ -135,7 +135,7 @@ public class Lesson1 {
     private void containPrimeNumCheck(int[] array) {
         int currentNum;
         int[] primeNumbers = new int[4];
-        primeNumbers = getPrimeNumbers(primeNumbers, 1,10);
+        primeNumbers = getPrimeNumbers(primeNumbers, 1, 10);
         boolean containPrime;
         int[] numArray = new int[5];
         printArray("\nPrime numbers: ", primeNumbers);
@@ -164,10 +164,10 @@ public class Lesson1 {
         int[] prime = new int[8363];
         System.out.println("\nPlease, " +
                 "Stand by.");
-        prime = getPrimeNumbers(prime, 9999,100000);
+        prime = getPrimeNumbers(prime, 9999, 100000);
 
-        for (int primeNum: prime){
-            for (int num: array){
+        for (int primeNum : prime) {
+            for (int num : array) {
                 if (primeNum == num) System.out.println(num + " ");
             }
         }

@@ -20,7 +20,7 @@ public class Lesson2 {
         //getTrainsNextStation(train);
     }
 
-    private void selection(){
+    private void selection() {
         System.out.println("Select option: \n" +
                 "1. Search train by stations.\n" +//done
                 "2. Search trains after.\n" +
@@ -82,11 +82,11 @@ public class Lesson2 {
         return newTrainsArray;
     }
 
-    private ArrayList<Train> getAvailableTrains(){
+    private ArrayList<Train> getAvailableTrains() {
         ArrayList<Train> availableTrains = new ArrayList<>();
 
         trainsArray.forEach(train -> {
-            if (train.getAvailableSeats() > 0){
+            if (train.getAvailableSeats() > 0) {
                 availableTrains.add(train);
             }
         });

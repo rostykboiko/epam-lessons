@@ -2,6 +2,7 @@ package com.epam;
 
 import com.epam.lesson1.Lesson1;
 import com.epam.lesson2.Lesson2;
+import com.epam.lesson3.Lesson5Main;
 
 import java.util.Scanner;
 
@@ -10,9 +11,9 @@ public class Main {
         lessonChooser();
     }
 
-    private static void lessonChooser(){
+    private static void lessonChooser() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Lesson 1, Lesson 2. \nEnter chosen option: ");
+        System.out.print("Lesson 1, Lesson 2. Lesson 3. \nEnter chosen option: ");
         int option = scanner.nextInt();
         switch (option) {
             case 1:
@@ -22,11 +23,13 @@ public class Main {
                 break;
             case 2:
                 Lesson2 lessonTask2;
-                lessonTask2= new Lesson2();
+                lessonTask2 = new Lesson2();
                 lessonTask2.run();
                 break;
             case 3:
-
+                Lesson5Main lesson3Main;
+                lesson3Main = new Lesson5Main();
+                lesson3Main.run();
                 break;
         }
 
