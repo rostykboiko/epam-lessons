@@ -8,7 +8,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        lessonChooser();
+
+        Lesson5Main lesson3Main;
+        lesson3Main = new Lesson5Main();
+        lesson3Main.run();
+
+        //lessonChooser();
     }
 
     private static void lessonChooser() {
