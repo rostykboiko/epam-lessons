@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 //    1. Текст, вводится через консоль, два однакові символи які йдуть підряд замінити одним
 //    2. Текст, відформатувати по правому краю
-//    3. Барровз Віллер, a) зміщення по одній букві
+//    3. Барровз Віллер,
+//    a) зміщення по одній букві
 //    I - java
 //    II - avaj
 //    III - vaja
@@ -15,6 +16,7 @@ import java.util.Scanner;
 
 public class Lesson5Main {
     private Scanner scanner = new Scanner(System.in);
+    private int lengthOfLine = 50;
     private int duplicatesCounter = 0;
     private String lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis imperdiet tellus, dictum congue velit efficitur sit amet. Aliquam erat volutpat. Nam eget rhoncus lorem, eu mattis nisl. Integer erat odio, auctor eu est eu, maximus scelerisque dolor. Donec turpis magna, eleifend ornare tellus vitae, luctus lobortis neque. Nulla congue ut neque eget eleifend. In hac habitasse platea dictumst. Morbi vel elit faucibus, tristique magna euismod, aliquet nunc. Aenean fringilla, felis vel dictum dictum, tortor mi feugiat felis, vitae aliquet ante magna nec dolor. Sed aliquam ex at tellus laoreet, eget commodo urna tempor. Vestibulum eu nulla fermentum, pulvinar ex a, vehicula magna. Aenean molestie leo eget augue convallis facilisis. Quisque sodales ex et ultricies finibus. Phasellus molestie vulputate velit. Curabitur semper nulla et justo posuere ultrices.\n" +
             "Curabitur aliquam nunc nec sapien mattis rhoncus. Sed maximus tortor vel est efficitur, condimentum facilisis nisi pretium. Fusce blandit risus eget lacinia faucibus. Phasellus porta arcu in tellus consectetur volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum accumsan tortor, non tincidunt nulla rhoncus ac. Cras eros lorem, rhoncus sit amet bibendum non, lacinia vitae nisi.\n" +
@@ -28,15 +30,22 @@ public class Lesson5Main {
         switch (index) {
             case 1:
                 String formattedString;
+                System.out.print("Enter Text for the task1: ");
                 formattedString = task1(getText());
                 printString(formattedString);
                 System.out.println("Duplicates found: " + duplicatesCounter);
                 break;
             case 2:
-                task2();
+                System.out.print("Enter Text for the task1: \n");
+                formattedString = task2(getText());
+                printString(formattedString);
                 break;
             case 3:
                 task3(lorem);
+                break;
+            default:
+                System.out.println("Error: Wrong value");
+                run();
                 break;
         }
     }
@@ -49,12 +58,11 @@ public class Lesson5Main {
         return str.toString();
     }
 
-    private String task1(String stringToFormat) {
-        System.out.print("Enter Text for the task1: ");
+    private String task1(String stringToCorrect) {
         duplicatesCounter = 0;
         StringBuilder formattedString = new StringBuilder();
         int index = 0;
-        char[] chars = stringToFormat.toCharArray();
+        char[] chars = stringToCorrect.toCharArray();
 
         for (char c : chars) {
             if (index + 1 < chars.length && c != chars[index + 1]) {
@@ -64,14 +72,28 @@ public class Lesson5Main {
             } else {
                 duplicatesCounter++;
             }
-
             index++;
         }
         return formattedString.toString();
     }
 
-    private void task2() {
-
+    private String task2(String stringToFormat) {
+        StringBuilder formattedString = new StringBuilder();
+        int lengthOfCurrentLine = 0;
+        String[] parts = stringToFormat.split(" ");
+        System.out.println("Слів: " + (parts.length - 1));
+        for (String word : parts) {
+            lengthOfCurrentLine += word.length();
+            if (lengthOfCurrentLine < lengthOfLine) {
+                formattedString.append(word);
+                formattedString.append(" ");
+            } else {
+                formattedString.append(word);
+                formattedString.append("\n");
+                lengthOfCurrentLine = 0;
+            }
+        }
+        return formattedString.toString();
     }
 
     private void task3(String inputString) {

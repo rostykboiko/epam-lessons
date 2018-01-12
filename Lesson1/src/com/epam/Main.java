@@ -36,6 +36,10 @@ public class Main {
                 lesson3Main = new Lesson5Main();
                 lesson3Main.run();
                 break;
+            default:
+                System.out.println("Error: Wrong value");
+                lessonChooser();
+                break;
         }
 
     }
