@@ -32,9 +32,9 @@ public class Main {
                 lessonTask2.run();
                 break;
             case 3:
-                Lesson5Main lesson3Main;
-                lesson3Main = new Lesson5Main();
-                lesson3Main.run();
+                Lesson5Main lesson5Main;
+                lesson5Main = new Lesson5Main();
+                lesson5Main.run();
                 break;
             default:
                 System.out.println("Error: Wrong value");

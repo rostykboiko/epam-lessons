@@ -1,6 +1,6 @@
 package com.epam.lesson3;
 
-import java.util.Scanner;
+import java.util.*;
 
 //    1. Текст, вводится через консоль, два однакові символи які йдуть підряд замінити одним
 //    2. Текст, відформатувати по правому краю
@@ -10,7 +10,6 @@ import java.util.Scanner;
 //    II - avaj
 //    III - vaja
 //    IV - ajav
-//    V - java
 //    b) сортування
 //    c) останні букви
 
@@ -18,11 +17,6 @@ public class Lesson5Main {
     private Scanner scanner = new Scanner(System.in);
     private int lengthOfLine = 50;
     private int duplicatesCounter = 0;
-    private String lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis imperdiet tellus, dictum congue velit efficitur sit amet. Aliquam erat volutpat. Nam eget rhoncus lorem, eu mattis nisl. Integer erat odio, auctor eu est eu, maximus scelerisque dolor. Donec turpis magna, eleifend ornare tellus vitae, luctus lobortis neque. Nulla congue ut neque eget eleifend. In hac habitasse platea dictumst. Morbi vel elit faucibus, tristique magna euismod, aliquet nunc. Aenean fringilla, felis vel dictum dictum, tortor mi feugiat felis, vitae aliquet ante magna nec dolor. Sed aliquam ex at tellus laoreet, eget commodo urna tempor. Vestibulum eu nulla fermentum, pulvinar ex a, vehicula magna. Aenean molestie leo eget augue convallis facilisis. Quisque sodales ex et ultricies finibus. Phasellus molestie vulputate velit. Curabitur semper nulla et justo posuere ultrices.\n" +
-            "Curabitur aliquam nunc nec sapien mattis rhoncus. Sed maximus tortor vel est efficitur, condimentum facilisis nisi pretium. Fusce blandit risus eget lacinia faucibus. Phasellus porta arcu in tellus consectetur volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum accumsan tortor, non tincidunt nulla rhoncus ac. Cras eros lorem, rhoncus sit amet bibendum non, lacinia vitae nisi.\n" +
-            "Vivamus non suscipit augue, non vehicula neque. Mauris lectus nibh, eleifend sed eros non, commodo viverra eros. Vestibulum et purus eget libero venenatis maximus. Vestibulum volutpat elementum massa sit amet ullamcorper. Integer a sollicitudin risus. Aliquam fringilla eu purus id porttitor. Vivamus non nunc nec risus volutpat finibus. Etiam vitae magna non risus pretium consequat. Quisque iaculis orci quis convallis hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque vestibulum elit ac dui maximus viverra. Pellentesque tempus ligula vel arcu suscipit, at mattis libero pharetra. Suspendisse hendrerit ex elit, et ultricies justo commodo commodo. Pellentesque elementum odio dui, vel suscipit turpis hendrerit ut.\n" +
-            "Sed mollis ante sit amet velit tempus lobortis. Morbi dolor felis, vulputate et neque ut, pulvinar faucibus magna. Donec suscipit odio vitae lobortis interdum. Etiam consequat at leo condimentum malesuada. Etiam tellus mi, euismod at sem rutrum, volutpat pellentesque est. Integer consectetur elit sit amet ipsum convallis, sed luctus enim euismod. In vel cursus orci. Aliquam finibus diam mi, id semper nibh tempor at. Phasellus tortor justo, commodo eget posuere ut, blandit sed odio. Nunc eu dui in massa hendrerit mattis vel sit amet ipsum. Aliquam erat volutpat. Etiam ut consectetur risus. Duis at fermentum ligula. In faucibus hendrerit arcu, gravida elementum libero dapibus ac.\n" +
-            "Donec massa ante, sollicitudin ac fermentum quis, tincidunt consectetur dolor. Pellentesque volutpat convallis velit, facilisis finibus lectus volutpat vitae. Cras sodales ut nunc in volutpat. Suspendisse potenti. Vivamus interdum hendrerit risus vel rutrum. Cras nec massa lobortis, pharetra sem ut, mattis dolor. Nulla egestas vitae tortor a ullamcorper. Donec at lacus purus. Nam lobortis lacus neque, faucibus placerat nunc cursus vitae. Duis orci diam, pretium et volutpat eget, facilisis id lorem. Cras et euismod dolor. Duis dignissim ac magna non tempus.";
 
     public void run() {
         System.out.print("Task 1, Task 2. Task 3. \nEnter chosen option: ");
@@ -41,7 +35,7 @@ public class Lesson5Main {
                 printString(formattedString);
                 break;
             case 3:
-                task3(lorem);
+                System.out.println("Final result: " + task3());
                 break;
             default:
                 System.out.println("Error: Wrong value");
@@ -96,10 +90,98 @@ public class Lesson5Main {
         return formattedString.toString();
     }
 
-    private void task3(String inputString) {
+    private String task3() {
+        String inputtedString;
+        System.out.println("Enter the word: ");
+        inputtedString = scanner.next();
+
+        char[][] bwtWord = getRotations(inputtedString);
+        String[] bwtString = charToString(bwtWord);
+
+        System.out.println("All rotations: ");
+        printArrayOfString(bwtString);
+        bwtString = sort(bwtString);
+        System.out.println("Sorted rotations: ");
+        printArrayOfString(bwtString);
+        inputtedString = lastIteration(bwtString);
+        return inputtedString;
+    }
+
+    private char[][] getRotations(String bwtWord) {
+        int lengthOfWord = bwtWord.length();
+        char[][] allRotations = new char[lengthOfWord][lengthOfWord];
+        char[] bwtChars = bwtWord.toCharArray();
+
+        for (int i = 0; i < lengthOfWord; i++) {
+            System.arraycopy(bwtChars, 1, allRotations[i], 0, lengthOfWord - 1);
+            allRotations[i][lengthOfWord - 1] = bwtChars[0];
+            bwtChars = allRotations[i];
+        }
+
+        return allRotations;
+    }
+
+    private String[] sort(String[] arrayOfStings) {
+        int length = arrayOfStings.length;
+        String temp;
+
+        for (int i = 0; i < length; i++) {
+            for (int j = i + 1; j < length; j++) {
+                if (arrayOfStings[i].compareTo(arrayOfStings[j]) > 0) {
+                    temp = arrayOfStings[i];
+                    arrayOfStings[i] = arrayOfStings[j];
+                    arrayOfStings[j] = temp;
+                }
+            }
+        }
+        return arrayOfStings;
+    }
+
+    private String lastIteration(String[] sortedRotations) {
+        StringBuilder outPut = new StringBuilder();
+        for (String word : sortedRotations) {
+            outPut.append(word.substring(word.length() - 1));
+        }
+        return outPut.toString();
+    }
+
+    private String[] charToString(char[][] allRotations) {
+        int length = allRotations.length;
+        String[] arrayOfStrings = new String[length];
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length; j++) {
+                if (j == 0) {
+                    arrayOfStrings[i] = allRotations[i][j] + "";
+                } else {
+                    arrayOfStrings[i] += allRotations[i][j];
+                }
+            }
+        }
+
+        return arrayOfStrings;
     }
 
     private void printString(String outPutText) {
         System.out.println(outPutText);
+    }
+
+    private void printArrayOfString(String[] outPutText) {
+        for (String word : outPutText)
+            System.out.println(word);
+    }
+
+    private void printArrayOfChar(char[][] rotations) {
+        for (char[] rotation : rotations) {
+            for (int j = 0; j < rotations.length; j++) {
+                System.out.print(rotation[j] + " ");
+            }
+            System.out.print("\n");
+        }
+    }
+
+    private void printArrayOfChar(char[] rotations) {
+        for (char rotation : rotations) {
+            System.out.print(rotation + " ");
+        }
     }
 }
