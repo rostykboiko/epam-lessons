@@ -4,7 +4,7 @@ public class Movie {
     private String _title;
     private Price _price;
 
-    public Movie(String title, int priceCode) {
+    public Movie(String title) {
         _title = title;
     }
 
@@ -16,7 +16,7 @@ public class Movie {
         return _price.getCharge(daysRented);
     }
 
-    Price getPrice(){
+    Price getPrice() {
         return _price;
     }
 }
