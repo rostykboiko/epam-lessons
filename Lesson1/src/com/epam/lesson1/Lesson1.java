@@ -115,7 +115,7 @@ public class Lesson1 {
         }
     }
 
-    private int[] getPrimeNumbers(int[] primeNumbers, int min, int max) {
+    public int[] getPrimeNumbers(int[] primeNumbers, int min, int max) {
         int j = 0;
         for (int i = min; i <= max; i++) {
             int counter = 0;
@@ -160,7 +160,7 @@ public class Lesson1 {
         }
     }
 
-    private int[] getPrime(int[] array) {
+    public int[] getPrime(int[] array) {
         int[] prime = new int[8363];
         System.out.println("\nPlease, " +
                 "Stand by.");

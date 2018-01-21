@@ -1,4 +1,4 @@
-package com.epam.lesson3;
+package com.epam.strings;
 
 import java.util.*;
 

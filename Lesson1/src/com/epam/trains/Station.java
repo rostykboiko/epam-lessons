@@ -1,4 +1,4 @@
-package com.epam.lesson2;
+package com.epam.trains;
 
 import java.util.Date;
 
