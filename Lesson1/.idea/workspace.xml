@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580807f9-5c64-46e4-aad8-0cdd61a34d19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/generics/Generics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/generics/MainGeneric.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/generics/OddPredicate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/generics/PrimePredicate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/generics/UnaryPredicate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/trains/Tickets.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lesson1/com/epam/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/epam/lesson2/Tickets.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/epam/lesson2/InitData.java" afterPath="$PROJECT_DIR$/src/com/epam/trains/InitData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/epam/lesson2/Lesson2.java" afterPath="$PROJECT_DIR$/src/com/epam/trains/Lesson2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/epam/lesson2/Station.java" afterPath="$PROJECT_DIR$/src/com/epam/trains/Station.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/epam/lesson2/Train.java" afterPath="$PROJECT_DIR$/src/com/epam/trains/Train.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/epam/lesson3/Lesson5Main.java" afterPath="$PROJECT_DIR$/src/com/epam/strings/Lesson5Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/epam/Main.java" afterPath="$PROJECT_DIR$/src/com/epam/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/epam/lesson1/Lesson1.java" afterPath="$PROJECT_DIR$/src/com/epam/lesson1/Lesson1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/epam/refactor/Movie.java" afterPath="$PROJECT_DIR$/src/com/epam/refactor/Movie.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -404,7 +388,7 @@
       <workItem from="1516016617744" duration="708000" />
       <workItem from="1516018379169" duration="4775000" />
       <workItem from="1516190533335" duration="2900000" />
-      <workItem from="1516547119577" duration="16000" />
+      <workItem from="1516547119577" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson1 task 4&#10;-if number contain primes&#10;-if number is the prime">
       <created>1514646852767</created>
@@ -441,11 +425,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516022519954</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lesson5 task 3 BWT algorithm">
+      <created>1516547169168</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1516547169168</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84367000" />
+    <option name="totallyTimeSpent" value="84406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="400" y="0" width="1206" height="866" extended-state="0" />
@@ -720,6 +711,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding>
+            <element signature="method#getText#0;class#Lesson5Main#0" expanded="false" />
+            <element signature="method#task1#0;class#Lesson5Main#0" expanded="false" />
+            <element signature="method#task2#0;class#Lesson5Main#0" expanded="false" />
+            <element signature="method#sort#0;class#Lesson5Main#0" expanded="false" />
+            <element signature="method#charToString#0;class#Lesson5Main#0" expanded="false" />
+            <element signature="method#printArrayOfString#0;class#Lesson5Main#0" expanded="false" />
+            <element signature="method#printArrayOfChar#0;class#Lesson5Main#0" expanded="false" />
+            <element signature="method#printArrayOfChar#1;class#Lesson5Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
