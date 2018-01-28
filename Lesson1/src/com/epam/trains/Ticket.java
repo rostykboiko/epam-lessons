@@ -1,16 +1,22 @@
 package com.epam.trains;
 
-public class Tickets {
+public class Ticket {
     private int ticketNumber;
     private int train;
     private int carriage;
     private int seat;
+    private Station fromStation;
+    private Station toStation;
 
-    public Tickets(int ticketNumber, int train, int carriage, int seat) {
+    public Ticket(){}
+
+    public Ticket(int ticketNumber, int train, int carriage, int seat, Station fromStation, Station toStation) {
         this.ticketNumber = ticketNumber;
         this.train = train;
         this.carriage = carriage;
         this.seat = seat;
+        this.fromStation = fromStation;
+        this.toStation = toStation;
     }
 
     public int getTicketNumber() {
@@ -43,5 +49,21 @@ public class Tickets {
 
     public void setSeat(int seat) {
         this.seat = seat;
+    }
+
+    public Station getFromStation() {
+        return fromStation;
+    }
+
+    public void setFromStation(Station fromStation) {
+        this.fromStation = fromStation;
+    }
+
+    public Station getToStation() {
+        return toStation;
+    }
+
+    public void setToStation(Station toStation) {
+        this.toStation = toStation;
     }
 }
