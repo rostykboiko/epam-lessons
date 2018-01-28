@@ -1,10 +1,10 @@
-package com.epam.CoffeePoint;
+package com.epam.coffeepoint;
 
-public class Coffee {
+class Food {
     private String title;
     private PriceForFood priceForFood;
 
-    public Coffee(String title) {
+    public Food(String title) {
         this.title = title;
     }
 
@@ -16,7 +16,7 @@ public class Coffee {
         this.title = title;
     }
 
-    public double getPriceForFood(int cups) {
-        return priceForFood.getCharge(cups);
+    public double getPriceForFood(int quantity) {
+        return priceForFood.getCharge(quantity);
     }
 }

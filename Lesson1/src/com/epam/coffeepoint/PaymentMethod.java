@@ -1,4 +1,4 @@
-package com.epam.CoffeePoint;
+package com.epam.coffeepoint;
 
 abstract class PaymentMethod {
     class CreditCard {

@@ -1,4 +1,4 @@
-package com.epam.Pizza;
+package com.epam.pizza;
 
 public class Order {
 
