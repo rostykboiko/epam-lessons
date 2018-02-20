@@ -1,4 +1,4 @@
-package com.epam.CoffeePoint;
+package com.epam.coffeepoint;
 
 import java.util.ArrayList;
 import java.util.List;

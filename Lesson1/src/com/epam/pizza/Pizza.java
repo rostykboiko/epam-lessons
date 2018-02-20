@@ -1,4 +1,4 @@
-package com.epam.Pizza;
+package com.epam.pizza;
 
 abstract class Pizza {
     private String title;

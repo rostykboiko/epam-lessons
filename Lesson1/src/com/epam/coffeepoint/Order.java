@@ -1,6 +1,5 @@
-package com.epam.CoffeePoint;
+package com.epam.coffeepoint;
 
-import java.util.ArrayList;
 import java.util.List;
 
 class Order {
@@ -21,6 +20,7 @@ class Order {
         this.foodList = foodList;
         this.paymentMethod = paymentMethod;
     }
+
 
     public double getOrderNum() {
         return orderNum;
