@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="580807f9-5c64-46e4-aad8-0cdd61a34d19" name="Default" comment="State Pattern">
+    <list default="true" id="580807f9-5c64-46e4-aad8-0cdd61a34d19" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/Main.java" afterPath="$PROJECT_DIR$/src/com/epam/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/pizza/Pizza.java" afterPath="$PROJECT_DIR$/src/com/epam/pizza/Pizza.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +28,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/epam/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pizza.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/Pizza.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutdatedProduct.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/OutdatedProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegularProduct.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/RegularProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtrasWithBonuses.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/decorator/ExtrasWithBonuses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Extras.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/decorator/Extras.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PizzaDecorator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/decorator/PizzaDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -53,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Executor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Executor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/epam/workflow/Executor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,44 +133,6 @@
             <state relative-caret-position="20">
               <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatePattern.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/workflow/StatePattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/workflow/task/OpenState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#104#105#0" expanded="true" />
-                <element signature="e#139#140#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CloseState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epam/workflow/task/CloseState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-              <folding>
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,12 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/epam/lesson1/LessonTask1.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/server/Controller.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/lesson2/DataBase.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/lesson2/Train.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/lesson2/Station.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/lesson2/InitData.java" />
         <option value="$PROJECT_DIR$/src/com/epam/lesson2/Lesson2.java" />
         <option value="$PROJECT_DIR$/src/com/epam/lesson3/Lesson3Main.java" />
         <option value="$PROJECT_DIR$/src/com/epam/lesson3/Lesson5Main.java" />
@@ -181,16 +199,22 @@
         <option value="$PROJECT_DIR$/src/com/epam/Pizza/PizzaOrder.java" />
         <option value="$PROJECT_DIR$/src/com/epam/Pizza/PizzaDecorator.java" />
         <option value="$PROJECT_DIR$/src/com/epam/Pizza/Order.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/Pizza/Pizza.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/Task.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/task/State.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/Main.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/task/CloseState.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/StatePattern.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/task/OpenState.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/task/Context.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/task/Task.java" />
         <option value="$PROJECT_DIR$/src/com/epam/workflow/Executor.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/Pizza/decorator/PizzaDecorator.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/Pizza/decorator/Extras.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/Pizza/decorator/ExtrasWithBonuses.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/Pizza/RegularProduct.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/Pizza/OutdatedProduct.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/Pizza/Pizza.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/pizza/Pizza.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/Main.java" />
       </list>
     </option>
   </component>
@@ -461,7 +485,7 @@
       <workItem from="1519133403107" duration="469000" />
       <workItem from="1519134574383" duration="502000" />
       <workItem from="1519139330477" duration="607000" />
-      <workItem from="1519140621128" duration="699000" />
+      <workItem from="1519140621128" duration="2661000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson1 task 4&#10;-if number contain primes&#10;-if number is the prime">
       <created>1514646852767</created>
@@ -533,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519141026688</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="State Pattern">
+      <created>1519141337884</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519141337884</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111469000" />
+    <option name="totallyTimeSpent" value="113431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="772" y="0" width="1155" height="1047" extended-state="0" />
@@ -552,7 +583,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="9" y="568" width="759" height="460" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="13" y="579" width="759" height="460" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -615,10 +646,10 @@
     <MESSAGE value="Lesson5 task 1" />
     <MESSAGE value="Lesson5 task 2" />
     <MESSAGE value="Lesson5 task 3 BWT algorithm" />
-    <MESSAGE value="Refactor" />
     <MESSAGE value="Pizza Lesson" />
     <MESSAGE value="State Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="State Pattern" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -627,32 +658,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/epam/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/lesson1/LessonTask1.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/epam/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/lesson1/LessonTask1.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/epam/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epam/lesson1/LessonTask1.java" />
     <entry file="file://$PROJECT_DIR$/src/com/epam/server/controller/Controller.java" />
     <entry file="file://$PROJECT_DIR$/src/com/epam/lesson1/LessonTask1.java" />
@@ -760,35 +765,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/CoffeePoint/PriceForFood.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/coffeePoint/PriceForFood.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/CoffeePoint/Coffee.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/coffeePoint/Coffee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/CoffeePoint/Food.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/coffeePoint/Food.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/CoffeePoint/CoffeeShopCustomer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/coffeePoint/CoffeeShopCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/CoffeePoint/PriceForCoffee.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/coffeePoint/PriceForCoffee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
@@ -802,31 +807,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/Pizza/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/CoffeePoint/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/coffeePoint/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/CoffeePoint/PaymentMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epam/coffeePoint/PaymentMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/Pizza/Pizza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -859,14 +857,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epam/workflow/Client.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/epam/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epam/workflow/task/CloseState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -933,10 +923,66 @@
     <entry file="file://$PROJECT_DIR$/src/com/epam/workflow/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/decorator/PizzaDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/decorator/Extras.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/decorator/ExtrasWithBonuses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/RegularProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/OutdatedProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/pizza/Pizza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
