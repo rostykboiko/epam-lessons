@@ -5,6 +5,7 @@ import com.epam.lesson1.Lesson1;
 import com.epam.trains.Lesson2;
 import com.epam.strings.Lesson5Main;
 import com.epam.generics.Generics;
+import com.epam.workflow.StatePattern;
 
 import java.util.Scanner;
 
@@ -14,8 +15,9 @@ public class Main {
 //        Lesson5Main lesson3Main;
 //        lesson3Main = new Lesson5Main();
 //        lesson3Main.run();
-
-        lessonChooser();
+        StatePattern statePattern = new StatePattern();
+        statePattern.main(args);
+      //  lessonChooser();
     }
 
     private static void lessonChooser() {
