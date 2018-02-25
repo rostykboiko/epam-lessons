@@ -1,4 +1,4 @@
-package com.epam.refactor;
+package com.epam.refactorRev1;
 
 public class Movie {
     private String _title;

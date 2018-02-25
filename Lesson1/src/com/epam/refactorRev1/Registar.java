@@ -1,12 +1,9 @@
-package com.epam.refactor;
+package com.epam.refactorRev1;
 
 public class Registar {
     private Movie _movie;
 
-
-    public static void add(String str, Movie mv) {
-        return ;
-    }
+    public static void add(String str, Movie mv) {}
 
     public static Object get(String str, String name) {
         return new Object();
@@ -15,5 +12,4 @@ public class Registar {
     double getCharge(int daysRented) {
         return _movie.getCharge(daysRented);
     }
-
 }

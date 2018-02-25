@@ -4,9 +4,7 @@ abstract class Pizza {
     private String title;
     public String size;
 
-    Pizza() {
-    }
-
+    Pizza() {}
 }
 
 abstract class PizzaDecorator extends Pizza {

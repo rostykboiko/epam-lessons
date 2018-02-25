@@ -1,4 +1,4 @@
-package com.epam.refactor;
+package com.epam.refactorRev1;
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -22,7 +22,7 @@ class Customer {
     public String statement() {
         double totalAmount = 0;
         Enumeration rentals = _rentals.elements();
-        String result = "Rental Record for " + getName() + "\n";
+        StringBuilder result = new StringBuilder("Rental Record for " + getName() + "\n");
         while (rentals.hasMoreElements()) {
             Rental aRental = (Rental) rentals.nextElement();
             // determine amounts for each line
@@ -30,31 +30,29 @@ class Customer {
 
             // show figures for this rental
 
-            result += "\t" + aRental.getMovie().getTitle() + "\t" + String.valueOf(aRental.getCharge()) + "\n";
+            result.append("\t").append(aRental.getMovie().getTitle()).append("\t").append(String.valueOf(aRental.getCharge())).append("\n");
         }
         // add footer lines
-        result += "Amount owed is " + String.valueOf(getTotalCharge()) + "\n";
-        result += "You earned " + String.valueOf(getTotalFrequentRenterPoints()) + " frequent renter points";
-        return result;
+        result.append("Amount owed is ").append(String.valueOf(getTotalCharge())).append("\n");
+        result.append("You earned ").append(String.valueOf(getTotalFrequentRenterPoints())).append(" frequent renter points");
+        return result.toString();
     }
 
     public String htmlStatement() {
         Enumeration rentals = _rentals.elements();
-        String result = "<H1>Rentals for <EM>" + _name + "</EM></H1><P>\n";
+        StringBuilder result = new StringBuilder("<H1>Rentals for <EM>" + _name + "</EM></H1><P>\n");
 
         while (rentals.hasMoreElements()) {
             Rental each = (Rental) rentals.nextElement();
 
             //show figures for each rental
-            result += each.getMovie().getTitle() + ": " + String.valueOf(each.getCharge()) + "<BR>\n";
+            result.append(each.getMovie().getTitle()).append(": ").append(String.valueOf(each.getCharge())).append("<BR>\n");
 
         }
         //add footer lines
-        result += "<P>You owe <EM>" + String.valueOf(getTotalCharge()) + "</EM><P>\n";
-        result += "On this rental you earned <EM>" +
-                String.valueOf(getTotalFrequentRenterPoints()) +
-                "</EM> frequent renter points<P>";
-        return result;
+        result.append("<P>You owe <EM>").append(String.valueOf(getTotalCharge())).append("</EM><P>\n");
+        result.append("On this rental you earned <EM>").append(String.valueOf(getTotalFrequentRenterPoints())).append("</EM> frequent renter points<P>");
+        return result.toString();
 
     }
 
