@@ -4,11 +4,18 @@ import com.epam.generics.MainGeneric;
 import com.epam.lesson1.Lesson1;
 import com.epam.trains.Lesson2;
 import com.epam.strings.Lesson5Main;
+import com.epam.generics.Generics;
+import com.epam.workflow.StatePattern;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        lessonChooser();
+//        Lesson5Main lesson3Main;
+//        lesson3Main = new Lesson5Main();
+//        lesson3Main.run();
+        StatePattern.main(args);
+        //  lessonChooser();
     }
 
     private static void lessonChooser() {
@@ -18,19 +25,15 @@ public class Main {
         if (option == 1) {
             Lesson1 lessonTask1 = new Lesson1();
             lessonTask1.run();
-
         } else if (option == 2) {
             Lesson2 lessonTask2 = new Lesson2();
             lessonTask2.run();
-
         } else if (option == 3) {
             Lesson5Main lesson5Main = new Lesson5Main();
             lesson5Main.run();
-
         } else if (option == 4) {
             MainGeneric generic = new MainGeneric();
             generic.run();
-
         } else {
             System.out.println("Error: Wrong value");
             lessonChooser();
