@@ -1,0 +1,57 @@
+import java.util.Enumeration;
+import java.util.Vector;
+
+class Customer {
+    private String _name;
+    private Vector _rentals = new Vector();
+    private int frequentRenterPoints = 0;
+
+    public Customer(String name) {
+        _name = name;
+    }
+
+    public void addRental(Rental arg) {
+        _rentals.addElement(arg);
+    }
+
+    private String getName() {
+        return _name;
+    }
+
+    double getTotalCharge(StringBuilder result){
+        double totalAmount = 0;
+        double thisAmount = 0;
+
+        Enumeration rentals = _rentals.elements();
+
+        while (rentals.hasMoreElements()) {
+            // determine amounts for each line
+            Rental rental = (Rental) rentals.nextElement();
+            thisAmount = rental.getCharge();
+
+            frequentRenterPoints = getTotalFrequentPoints(rental);
+
+            result.append("\t").append(rental.getMovie().getTitle()).append("\t")
+                    .append(String.valueOf(totalAmount)).append("\n");
+            totalAmount += thisAmount;
+        }
+    return thisAmount;
+    }
+
+    private int getTotalFrequentPoints(Rental rental){
+        int frequentRenterPoints = 0;
+        frequentRenterPoints = rental.getRentalFrequentRenterPoints(frequentRenterPoints);
+        return frequentRenterPoints;
+    }
+
+    public String statement() {
+        StringBuilder result = new StringBuilder("Rental Record for " + getName() + "\n");
+
+        // add footer lines
+        result.append("Amount owed is ").append(String.valueOf(getTotalCharge(result))).append("\n");
+        result.append("You earned ").append(String.valueOf(frequentRenterPoints)).append(" frequent renter points");
+        return result.toString();
+    }
+
+
+}

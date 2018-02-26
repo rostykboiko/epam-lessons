@@ -1,0 +1,47 @@
+import movie.Movie;
+
+class Rental {
+
+	private Movie _movie;
+	private int _daysRented;
+
+	public Rental(Movie movie, int daysRented) {
+		movie = movie;
+		_daysRented = daysRented;
+	}
+
+	double getCharge() {
+		double rentAmount = 0;
+
+		if (getMovie().getPriceCode() == Movie.REGULAR) {
+			rentAmount += 2;
+			if (getDaysRented() > 2)
+				rentAmount += (getDaysRented() - 2) * 1.5;
+		}
+		if (getMovie().getPriceCode() == Movie.NEW_RELEASE) {
+			rentAmount += getDaysRented() * 3;
+		}
+		if (getMovie().getPriceCode() == Movie.CHILDREN){
+			rentAmount += 1.5;
+			if (getDaysRented() > 3)
+				rentAmount += (getDaysRented() - 3) * 1.5;
+		}
+		return rentAmount;
+	}
+
+	int getRentalFrequentRenterPoints(int frequentRenterPoints){
+		frequentRenterPoints++;
+
+		if ((getMovie().getPriceCode() == Movie.NEW_RELEASE) && getDaysRented() > 1)
+			frequentRenterPoints++;
+		return frequentRenterPoints;
+	}
+
+	int getDaysRented() {
+		return _daysRented;
+	}
+
+	Movie getMovie() {
+		return _movie;
+	}
+}
