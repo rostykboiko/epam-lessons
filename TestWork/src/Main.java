@@ -11,7 +11,7 @@ public class Main {
         room.addDevice(device);
         device = new Device("DishWasher", 170, false, 120);
         room.addDevice(device);
-        house.addRoom();
+        house.addRoom(room);
 
         room.setLabel("BedRoom");
         device = new Device("TV", 60,true, 606);
@@ -20,7 +20,7 @@ public class Main {
         room.addDevice(device);
         device = new Device("Laptop", 30, false, 120);
         room.addDevice(device);
-        house.addRoom();
+        house.addRoom(room);
 
 
         printRoomPower(room);
@@ -32,7 +32,8 @@ public class Main {
         System.out.print("Room: "
                 + room.getLabel()
                 + "\nConsumed Power: "
-                + room.getRoomTotal());
+                + room.getRoomTotal()
+                + "\n");
 
     }
 

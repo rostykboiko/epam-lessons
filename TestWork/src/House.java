@@ -17,16 +17,12 @@ public class House {
     public float getTotalConsumedPower(){
         float totalConsumption = 0;
         if (roomList != null) {
-            for (Room room: roomList) {
+            for (Room room : roomList) {
+
                 totalConsumption += room.getRoomTotal();
             }
         }
         return totalConsumption;
-    }
-
-    public void addRoom() {
-        Room room = new Room();
-        roomList.add(room);
     }
 
     public void addRoom(Room room) {

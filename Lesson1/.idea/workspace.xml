@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580807f9-5c64-46e4-aad8-0cdd61a34d19" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/CommandHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/CommandService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/LineHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/pizza/OutdatedProduct.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/pizza/RegularProduct.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/pizza/decorator/Extras.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/pizza/decorator/ExtrasWithBonuses.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/pizza/decorator/PizzaDecorator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/testWorkt26_02/Home.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/testWorkt26_02/Room.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../TestWork/src/Device.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../TestWork/src/Room.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../TestWork/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../TestWork/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../TestWork/out/production/TestWork/House.class" afterPath="$PROJECT_DIR$/../TestWork/out/production/TestWork/House.class" />
+      <change beforePath="$PROJECT_DIR$/../TestWork/out/production/TestWork/Main.class" afterPath="$PROJECT_DIR$/../TestWork/out/production/TestWork/Main.class" />
+      <change beforePath="$PROJECT_DIR$/../TestWork/src/House.java" afterPath="$PROJECT_DIR$/../TestWork/src/House.java" />
+      <change beforePath="$PROJECT_DIR$/../TestWork/src/Main.java" afterPath="$PROJECT_DIR$/../TestWork/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
