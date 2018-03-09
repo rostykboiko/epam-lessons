@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Room {
+public class Room  {
     private String Label;
     private List<Device> deviceList;
 

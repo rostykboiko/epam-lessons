@@ -3,7 +3,7 @@ package com.epam.workflow.task;
 public class OpenState implements State {
 
     public String toString(){
-        return "Open State";
+        return "Open CarState";
     }
 
     @Override
@@ -11,7 +11,7 @@ public class OpenState implements State {
         if (task.getState() == null) {
             System.out.println("Task is open");
             task.setState(this);
-        } else if (task.getState().toString().equals("Open State")) {
+        } else if (task.getState().toString().equals("Open CarState")) {
             System.out.println("Task is reopened");
             task.setState(this);
         } else {

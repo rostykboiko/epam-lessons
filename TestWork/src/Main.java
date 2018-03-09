@@ -1,3 +1,5 @@
+import java.util.concurrent.Callable;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -44,6 +46,12 @@ public class Main {
                 + room.getRoomWattagePerHour()
                 + "\n");
 
+//        Thread tr = new Thread(new Callable<>() {
+//            @Override
+//            public V call() throws Exception {
+//                return null;
+//            }
+//        });
     }
 
     private static void printHouseTotalCost(House house){
@@ -51,6 +59,8 @@ public class Main {
                 + house.getBuildingType().getTypeLabel()
                 + "\nConsumed Power: "
                 + house.getTotalConsumedPower()
+                + "\nTotal Price: "
+                + house.getPrice(house.getTotalConsumedPower())
                 + "\n");
     }
 

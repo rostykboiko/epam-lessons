@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class House {
+public class House{
     private BuildingType buildingType;
     private ArrayList<Room> roomList;
 
