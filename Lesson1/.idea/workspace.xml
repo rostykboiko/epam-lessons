@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="580807f9-5c64-46e4-aad8-0cdd61a34d19" name="Default" comment="Thread Lesson">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/Callback.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/Car.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/CarHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/state/CarState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/state/FinalState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/state/Foamed.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/state/Rinsing.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/epam/threadsLesson/state/StartingState.java" />
+    <list default="true" id="580807f9-5c64-46e4-aad8-0cdd61a34d19" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/workflow/task/CloseState.java" afterPath="$PROJECT_DIR$/src/com/epam/workflow/task/CloseState.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/workflow/task/OpenState.java" afterPath="$PROJECT_DIR$/src/com/epam/workflow/task/OpenState.java" />
-      <change beforePath="$PROJECT_DIR$/../TestWork/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../TestWork/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../TestWork/TestWork.iml" afterPath="$PROJECT_DIR$/../TestWork/TestWork.iml" />
-      <change beforePath="$PROJECT_DIR$/../TestWork/out/production/TestWork/Main.class" afterPath="$PROJECT_DIR$/../TestWork/out/production/TestWork/Main.class" />
-      <change beforePath="$PROJECT_DIR$/../TestWork/src/House.java" afterPath="$PROJECT_DIR$/../TestWork/src/House.java" />
-      <change beforePath="$PROJECT_DIR$/../TestWork/src/Main.java" afterPath="$PROJECT_DIR$/../TestWork/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/../TestWork/src/Room.java" afterPath="$PROJECT_DIR$/../TestWork/src/Room.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/CommandService.java" afterPath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/CommandService.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/ParserService.java" afterPath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/ParserService.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java" afterPath="$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,11 +72,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommandService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/CommandService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="608">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#595#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/ParserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="5" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RefactorLessonTask.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,8 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/epam/CoffeePoint/Customer.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/CoffeePoint/Payment.java" />
         <option value="$PROJECT_DIR$/src/com/epam/CoffeePoint/PaymentMethod.java" />
         <option value="$PROJECT_DIR$/src/com/epam/CoffeePoint/CoffeeShopCustomer.java" />
         <option value="$PROJECT_DIR$/src/com/epam/CoffeePoint/Order.java" />
@@ -148,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/com/epam/refactorRev1/Customer.java" />
         <option value="$PROJECT_DIR$/src/com/epam/tesworkt26_02/TestWork.java" />
         <option value="$PROJECT_DIR$/src/com/epam/tesWorkt26_02/TestWork.java" />
-        <option value="$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java" />
         <option value="$PROJECT_DIR$/src/com/epam/testWorkt26_02/TestWork.java" />
         <option value="$PROJECT_DIR$/src/com/epam/testWorkt26_02/Kitchen.java" />
         <option value="$PROJECT_DIR$/src/com/epam/testWorkt26_02/HomeDevices.java" />
@@ -173,6 +179,9 @@
         <option value="$PROJECT_DIR$/src/com/epam/coffeePoint/Food.java" />
         <option value="$PROJECT_DIR$/src/com/epam/coffeePoint/Order.java" />
         <option value="$PROJECT_DIR$/src/com/epam/threadsLesson/state/Rinsing.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/openCloseRefactor/CommandService.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/openCloseRefactor/ParserService.java" />
+        <option value="$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java" />
       </list>
     </option>
   </component>
@@ -273,6 +282,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="epam" type="462c0819:PsiDirectoryNode" />
               <item name="coffeePoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lesson1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lesson1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="epam" type="462c0819:PsiDirectoryNode" />
+              <item name="openCloseRefactor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lesson1" type="b2602c69:ProjectViewProjectNode" />
@@ -481,7 +497,7 @@
       <workItem from="1519584373066" duration="3198000" />
       <workItem from="1519656424986" duration="1523000" />
       <workItem from="1519826672312" duration="78000" />
-      <workItem from="1520434397075" duration="5825000" />
+      <workItem from="1520434397075" duration="5892000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson1 task 4&#10;-if number contain primes&#10;-if number is the prime">
       <created>1514646852767</created>
@@ -539,14 +555,22 @@
       <option name="project" value="LOCAL" />
       <updated>1517130341433</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Thread Lesson">
+      <created>1520602785685</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1520602785685</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118224000" />
+    <option name="totallyTimeSpent" value="118291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3226" height="1746" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -561,7 +585,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17705655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17705655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949513" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290627" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -781,20 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/ParserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1044,8 +1054,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/CommandService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        <state relative-caret-position="608">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/ParserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epam/openCloseRefactor/RefactorLessonTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
